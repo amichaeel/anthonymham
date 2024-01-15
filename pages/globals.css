@@ -39,9 +39,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(16, 23, 42);
   font-family: 'Hoves', sans-serif;
-  background-image: radial-gradient(600px at var(--x, 500px) var(--y, 100px),
-  rgba(29, 79, 216, 0.071),
-  transparent 80%)
 }
 
 .spotlight {

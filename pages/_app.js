@@ -7,9 +7,8 @@ export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const updateMousePosition = (e) => {
       const { pageX, pageY } = e;
-      const body = document.body;
-      body.style.setProperty("--x", `${pageX}px`);
-      body.style.setProperty("--y", `${pageY}px`);
+      spotlightRef.current.style.setProperty("--x", `${pageX}px`)
+      spotlightRef.current.style.setProperty("--y", `${pageY}px`)
     }
 
     window.addEventListener("mousemove", updateMousePosition);
@@ -18,5 +17,10 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [])
 
-  return <Component {...pageProps} />
+  return (
+    <div className="group/spotlight relative">
+      <div ref={spotlightRef} className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute spotlight"></div>
+      <Component {...pageProps} />
+    </div>
+  )
 }

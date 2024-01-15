@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
+import NextLink from 'next/link'
+import { Link as RSLink, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -19,12 +20,12 @@ export default function Home() {
       <header className="flex justify-between pt-16 pb-16 px-4">
         <h1 className="text-base font-semibold text-white">ah</h1>
         <nav className="flex gap-4 text-white">
-          <Link
+          <RSLink
             to="contact"
             smooth={true}
             className="cursor-pointer"
             onClick={handleBounce}
-          >Contact</Link>
+          >Contact</RSLink>
         </nav>
       </header>
 
@@ -63,10 +64,10 @@ export default function Home() {
           </div>
 
           <div className="flex justify-start mt-6">
-            <a className="text-white/70 justify-self-end group hover:text-teal-300" href="/projects">
+            <NextLink className="text-white/70 justify-self-end group hover:text-teal-300" href="/projects">
               View All Projects
               <FontAwesomeIcon className="ml-1 group-hover:translate-x-2 transition-all duration-300" icon={faArrowRight} />
-            </a>
+            </NextLink>
           </div>
           
         </section>

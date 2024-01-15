@@ -19,8 +19,8 @@ module.exports = {
       animation: {
         text: 'text 5s ease infinite',
         bounce: 'bounce 0.5s infinite',
-        shine: 'shine 0.6s ease-in-out infinite'
-
+        shine: 'shine 0.6s ease-in-out infinite',
+        fadeIn: 'fadeIn 2s eass-in',
       },
       keyframes: {
         text: {
@@ -41,6 +41,14 @@ module.exports = {
           '50%': {
             'opacity': '60%',
             'transform': 'scale(1.02)'
+          },
+        },
+        fadeIn: {
+          '0%': {
+            'opacity': '0%',
+          },
+          '100%': {
+            'opacity': '100%',
           },
         },
       },
