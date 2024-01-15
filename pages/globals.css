@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hoves';
+  src: url('/tt_hoves_pro/TT Hoves Pro Trial Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hoves';
+  src: url('/tt_hoves_pro/TT Hoves Pro Trial Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hoves';
+  src: url('/tt_hoves_pro/TT Hoves Pro Trial Thin.ttf') format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hoves';
+  src: url('/tt_hoves_pro/TT Hoves Pro Trial Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  /* --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(12, 20, 35);
+  font-family: 'Hoves', sans-serif;
+}
