@@ -40,7 +40,7 @@ export default function Home() {
         {/* Projects */}
         <section className="pb-16 pt-10">
           <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
-            <h2 className="font-semibold text-base text-white/90 tracking-widest">Projects</h2>
+            <h2 className="font-semibold text-base text-white/90 ">Projects</h2>
           </div>
           <div className="space-y-4 group/projects">
 
@@ -89,7 +89,7 @@ export default function Home() {
         {/* Experience */}
         <section className="pb-16 pt-10">
           <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
-            <h2 className="font-semibold text-base text-white/90 tracking-widest">Experience</h2>
+            <h2 className="font-semibold text-base text-white/90">Experience</h2>
           </div>
           <div className="space-y-4 group">
 
