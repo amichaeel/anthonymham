@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faLink, faLinkSlash } from "@fortawesome/free-solid-svg-icons";
 import Papa from "papaparse";
+import { RingLoader } from "react-spinners";
+
 
 
 export default function ProjectTable() {
@@ -30,7 +32,7 @@ export default function ProjectTable() {
 
   return (
     <>
-      {projects.length > 0 && (
+      {projects.length > 0 ? (
         <table className="mt-12 w-full border-collapse text-left">
           <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
             <tr>
@@ -44,11 +46,11 @@ export default function ProjectTable() {
           <tbody>
             {console.log(projects)}
             {projects.map((project, index) => (
-              <tr key={index} className="border-b border-slate-300/10 last:border-none transition-all duration-300">
+              <tr key={index} className="border-b border-slate-300/10 last:border-none transition-all duration-300 rounded hover:bg-slate-500/10">
                 <td className="py-4 pr-4 align-top text-sm text-white/40">
                   {project.Year}
                 </td>
-                <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+                <td className="py-4 pr-4 align-top font-bold leading-snug text-slate-200">
                   <div className="sm:inline md:hidden">
                     <a href={`https://${project.Link}`}>{project.Project} <FontAwesomeIcon className="text-xs ml-2" icon={faArrowRight} /></a>
                   </div>
@@ -56,7 +58,7 @@ export default function ProjectTable() {
                     {project.Project}
                   </div>
                 </td>
-                <td className="hidden lg:table-cell py-4 pr-4 align-top leading-snug text-slate-200">
+                <td className="hidden lg:table-cell py-4 pr-4 align-top leading-snug text-slate-200/70 text-sm">
                   {project["Made at"]}
                 </td>
                 <td className="hidden py-4 pr-4 align-top lg:table-cell">
@@ -83,6 +85,13 @@ export default function ProjectTable() {
             ))}
           </tbody>
         </table>
+      ) : (
+        <div className="flex flex-col mt-[200px] items-center justify-center min-w-screen min-h-fit opacity-50">
+          <RingLoader
+            color="white"
+            loading={true}
+          />
+        </div>
       )}
     </>
   )

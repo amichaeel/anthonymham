@@ -20,7 +20,7 @@ module.exports = {
         text: 'text 5s ease infinite',
         bounce: 'bounce 0.5s infinite',
         shine: 'shine 0.6s ease-in-out infinite',
-        fadeIn: 'fadeIn 2s eass-in',
+        fadeIn: 'fadeIn 0.5s ease-in',
       },
       keyframes: {
         text: {
