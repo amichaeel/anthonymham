@@ -51,7 +51,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4 items-center group-hover/projects:opacity-40 group-hover/projects:hover:hover:opacity-100 transition-all duration-300 bg-slate-800 rounded-xl p-5 cursor-pointer hover:bg-slate-700">
-              <Image alt="placeholder-logo" className="rounded-lg" src="/placeholder.png" width={40} height={40} />
+              <Image alt="placeholder-logo" className="rounded-lg" src="/placeholder-3.png" width={40} height={40} />
               <span>
                 <h3 className="text-white font-medium text-base">Promptora</h3>
                 <h3 className="text-white/70 text-sm">A place to share and discover AI prompts.</h3>
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             <div className="flex gap-4 items-center group-hover/projects:opacity-40 group-hover/projects:hover:hover:opacity-100 transition-all duration-300 bg-slate-800 rounded-xl p-5 cursor-pointer hover:bg-slate-700">
-              <Image alt="placeholder-logo" className="rounded-lg" src="/placeholder.png" width={40} height={40} />
+              <Image alt="placeholder-logo" className="rounded-lg" src="/placeholder-2.png" width={40} height={40} />
               <span>
                 <h3 className="text-white font-medium text-base">Journey</h3>
                 <h3 className="text-white/70 text-sm">A web app making it easy to create iteneries when you&apos;re on vacation.</h3>
