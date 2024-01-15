@@ -47,7 +47,7 @@ export default function Home() {
           <div className="space-y-4 group/projects">
 
             <ProjectModal
-              imgSource="/placeholder.png"
+              imgSource="/orbit-logo.png"
               title="Orbit"
               description="A decentralized social media platform."
             />
