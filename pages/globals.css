@@ -32,13 +32,17 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  /* --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
 }
 
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(12, 20, 35);
+  background: rgb(16, 23, 42);
   font-family: 'Hoves', sans-serif;
+}
+
+.spotlight {
+  background-image: radial-gradient(600px at var(--x, 500px) var(--y, 100px),
+      rgba(29, 79, 216, 0.071),
+      transparent 80%)
 }
