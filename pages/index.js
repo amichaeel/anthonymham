@@ -128,26 +128,26 @@ export default function Home() {
         <div className="flex justify-center">
           <section id="contact" className={`grid grid-cols-2 text-white/90 text-sm group/contact ${isPulsing ? "animate-pulse" : ""}`}>
             <div className="text-white/50 justify-self-start group/email group-hover/contact:hover:opacity-100 group-hover/contact:opacity-60 transition-all duration-300">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-6" />
-              <a className="text-white/50 group-hover/email:text-white/90 transition-all" href="mailto:mail@anthonymham.com">mail@anthonymham.com</a>
+              <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
+              <a className="text-white/50 group-hover/email:text-white/90 transition-all" href="mailto:mail@anthonymham.com">mail@anthonymham</a>
             </div>
             <div className=" items-center justify-self-end justify-between text-white/50 group/twitter group-hover/contact:hover:opacity-100 group-hover/contact:opacity-60 transition-all duration-300">
               <a className="text-white/50 group-hover/twitter:text-white/90 transition-all" href="https://www.twitter.com/a_michaeel">@a_michaeel</a>
-              <FontAwesomeIcon icon={faTwitter} className="ml-6" />
+              <FontAwesomeIcon icon={faTwitter} className="ml-3" />
             </div>
             <div className=" items-center justify-self-start justify-between text-white/50 group/github group-hover/contact:hover:opacity-100 group-hover/contact:opacity-60 transition-all duration-300">
-              <FontAwesomeIcon icon={faGithub} className="mr-6" />
+              <FontAwesomeIcon icon={faGithub} className="mr-3" />
               <a className="text-white/50 group-hover/github:text-white/90 transition-all" href="https://www.github.com/amichaeel">git/amichaeel</a>
             </div>
             <div className=" items-center justify-self-end justify-between text-white/50 group/linkedin group-hover/contact:hover:opacity-100 group-hover/contact:opacity-60 transition-all duration-300">
               <a className="text-white/50 group-hover/linkedin:text-white/90 transition-all" href="https://www.linkedin.com/in/xnthiny">in/xnthiny</a>
-              <FontAwesomeIcon icon={faLinkedinIn} className="ml-6" />
+              <FontAwesomeIcon icon={faLinkedinIn} className="ml-3" />
             </div>
           </section>
         </div>
 
         {/* Footer */}
-        <section className="py-8 flex items-center justify-center">
+        <section className="py-8 flex items-center text-center justify-center">
           <p className="text-white/50 text-xs">Coded in
             <a className="text-white/80" href="https://code.visualstudio.com/"> Visual Studio Code </a>
             by Anthony Ham. Built with

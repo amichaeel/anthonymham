@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      future: {
+        hoverOnlyWhenSupported: true,
+      },
       display: ["group-hover"],
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
