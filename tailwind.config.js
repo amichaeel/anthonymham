@@ -18,6 +18,9 @@ module.exports = {
       },
       animation: {
         text: 'text 5s ease infinite',
+        bounce: 'bounce 0.5s infinite',
+        shine: 'shine 0.6s ease-in-out infinite'
+
       },
       keyframes: {
         text: {
@@ -28,6 +31,16 @@ module.exports = {
           '50%': {
             'background-size': '200% 200%',
             'background-position': 'right center',
+          },
+        },
+        shine: {
+          '0%, 100%': {
+            'opacity': '100%',
+            'transform': 'scale(1)'
+          },
+          '50%': {
+            'opacity': '60%',
+            'transform': 'scale(1.02)'
           },
         },
       },
