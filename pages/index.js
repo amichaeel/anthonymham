@@ -122,7 +122,7 @@ export default function Home() {
           <div className="group">
             <div className="grid grid-cols-2 gap-4">
 
-              <div className="cursor-default flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -133,14 +133,14 @@ export default function Home() {
                   <div className="flex flex-col space-y-2">
                     <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
                     <span className="text-sm text-white/80">Spending a semester with Google, taking courses such as Applied Data Structures and Software Development Studio. Additionally, I am being mentored by a Google software engineer, providing insights into the tech industry and enhancing my skills.</span>
-                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://buildyourfuture.withgoogle.com/programs/tech-exchange">
-                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    <a className="text-white/70 text-sm lg:hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://buildyourfuture.withgoogle.com/programs/tech-exchange">
+                      Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
                     </a>
                   </div>
                 </div>
               </div>
 
-              <div className="cursor-default flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -151,14 +151,14 @@ export default function Home() {
                   <div className="flex flex-col space-y-2">
                     <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
                     <span className="text-sm text-white/80">A year long program with Apple, where I am actively being micro-mentored by Apple employees, attending internal workshops to improve technical and professional skills, and have access to an internal resource database to further develop my skills.</span>
-                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://www.apple.com/racial-equity-justice-initiative/pdf/2023-Impact-Overview.pdf">
-                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    <a className="text-white/70 text-sm lg:hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://www.apple.com/racial-equity-justice-initiative/pdf/2023-Impact-Overview.pdf">
+                      Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
                     </a>
                   </div>
                 </div>
               </div>
 
-              <div className="cursor-default col-span-2 flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+              <div className="cursor-default col-span-2 flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -170,8 +170,8 @@ export default function Home() {
                     <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
                     <span className="text-sm text-white/80">
                     Selected as one of 50 scholars in the prestigious S-STEM Flit-GAP project across FIU, UCF, and USF, I gained specialized training in computing disciplines like Computer Science and Cybersecurity. The program provided me with scholarships, mentorship, and unique opportunities in research, internships, and entrepreneurship, enhancing my professional and academic skills.</span>
-                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://flit-gap.org/">
-                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    <a className="text-white/70 text-sm lg:hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://flit-gap.org/">
+                      Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
                     </a>
                   </div>
                 </div>
