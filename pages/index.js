@@ -144,7 +144,7 @@ export default function Home() {
           <div className="group">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
 
-              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 lg:w-full rounded-xl text-white transition-all duration-30">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 lg:w-full rounded-xl text-white transition-all duration-200">
                 <div className="p-3 group/title">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-slate-200 items-center text-4xl">
