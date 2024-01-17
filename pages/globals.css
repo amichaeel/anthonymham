@@ -53,6 +53,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  background: rgb(16, 23, 42);
 }
 
 
