@@ -10,7 +10,7 @@ export default function ProjectModal({title, imgSource, description}) {
       <div className="flex items-center justify-between w-full">
         <span>
           <h3 className="text-white font-medium text-base">{title}</h3>
-          <h3 className="text-white/70 text-sm">{description}</h3>
+          <h3 className="text-white/70 font-thin text-sm">{description}</h3>
         </span>
         <div>
           <FontAwesomeIcon className="text-white/70 opacity-10 lg:group-hover/project:opacity-40 transition-all duration-300" icon={faArrowUpRightFromSquare} />

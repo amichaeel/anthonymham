@@ -36,21 +36,21 @@ export default function ProjectTable() {
         <table className="mt-12 w-full border-collapse text-left">
           <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
             <tr>
-              <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Year</th>
-              <th className="py-4 pr-8 text-sm font-semibold text-slate-200">Project</th>
-              <th className="py-4 pr-8 text-sm font-semibold text-slate-200 hidden lg:table-cell">Made at</th>
-              <th className="py-4 pr-8 text-sm font-semibold text-slate-200 hidden lg:table-cell">Built with</th>
-              <th className="py-4 pr-8 text-sm font-semibold text-slate-200 hidden md:table-cell">Link</th>
+              <th className="py-4 pr-8 text-sm font-normal text-slate-200">Year</th>
+              <th className="py-4 pr-8 text-sm font-normal text-slate-200">Project</th>
+              <th className="py-4 pr-8 text-sm font-normal text-slate-200 hidden lg:table-cell">Made at</th>
+              <th className="py-4 pr-8 text-sm font-normal text-slate-200 hidden lg:table-cell">Built with</th>
+              <th className="py-4 pr-8 text-sm font-normal text-slate-200 hidden md:table-cell">Link</th>
             </tr>
           </thead>
           <tbody>
             {console.log(projects)}
             {projects.map((project, index) => (
               <tr key={index} className="border-b border-slate-300/10 last:border-none transition-all duration-300 rounded hover:bg-slate-500/10">
-                <td className="py-4 pr-4 align-top text-sm text-white/40">
+                <td className="py-4 pr-4 font-light align-top text-sm text-slate-400">
                   {project.Year}
                 </td>
-                <td className="py-4 pr-4 align-top font-bold leading-snug text-slate-200">
+                <td className="py-4 pr-4 align-top leading-snug text-slate-200 font-normal">
                   <div className="sm:inline md:hidden">
                     <a href={`https://${project.Link}`}>{project.Project} <FontAwesomeIcon className="text-xs ml-2" icon={faArrowRight} /></a>
                   </div>
@@ -58,14 +58,14 @@ export default function ProjectTable() {
                     {project.Project}
                   </div>
                 </td>
-                <td className="hidden lg:table-cell py-4 pr-4 align-top leading-snug text-slate-200/70 text-sm">
+                <td className="hidden lg:table-cell font-thin py-4 pr-4 align-top leading-snug text-slate-200/70 text-sm">
                   {project["Made at"]}
                 </td>
                 <td className="hidden py-4 pr-4 align-top lg:table-cell">
                   <ul className="flex -translate-y-1.5 flex-wrap">
                     {project["Built with"].split(",").map((tech, techIndex) => (
                       <li key={techIndex} className="my-1 mr-1.5">
-                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-light leading-5 text-teal-300">
                           {tech.trim()}
                         </div>
                       </li>
@@ -75,8 +75,8 @@ export default function ProjectTable() {
                 <td className="py-4 align-top hidden md:table-cell">
                   <a target="_blank" href={`https://${project.Link}`} className="inline-flex items-baseline font-medium leading-tight text-sm text-slate-400 hover:text-teal-300 focus-visible:text-teal-300">
                     <span>
-                      <span className="inline-block cursor-pointer transition-all duration-300 group">
-                        {project.Link} <FontAwesomeIcon className="hidden md:inline ml-1 text-xs group-hover:translate-x-2 transition-all duration-200" icon={faArrowRight} />
+                      <span className="inline-block font-normal cursor-pointer transition-all duration-300 group">
+                        {project.Link} <FontAwesomeIcon className="hidden md:inline ml-1 text-xs group-hover:-rotate-45 transition-transform duration-200" icon={faArrowRight} />
                       </span>
                     </span>
                   </a>

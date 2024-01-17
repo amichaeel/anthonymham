@@ -18,7 +18,7 @@ module.exports = {
       },
       animation: {
         text: 'text 5s ease infinite',
-        bounce: 'bounce 0.5s infinite',
+        bounce: 'bounce 2s infinite',
         shine: 'shine 0.6s ease-in-out infinite',
         fadeIn: 'fadeIn 0.5s ease-in',
       },
