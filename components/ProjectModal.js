@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 export default function ProjectModal({title, imgSource, description}) {
   return (
-    <div className="flex gap-4 items-center group/project group-hover/projects:opacity-40 group-hover/projects:hover:hover:opacity-100 transition-all duration-300 bg-slate-800 rounded-xl p-5 cursor-pointer hover:bg-slate-700">
+    <div className="flex gap-4 items-center group/project group-hover/projects:opacity-40 group-hover/projects:hover:hover:opacity-100 transition-all duration-300 bg-slate-800 rounded-xl p-5 cursor-default hover:bg-slate-700">
       <Image alt="placeholder-logo" className="rounded-lg group-hover/project:scale-110 transition-all duration-300" src={imgSource} width={40} height={40} />
       <div className="flex items-center justify-between w-full">
         <span>

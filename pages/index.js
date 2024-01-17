@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import NextLink from 'next/link'
 import { Link as RSLink, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faAppleAlt, faArrowRight, faDotCircle, faEnvelope, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
+import { faApple, faGithub, faGoogle, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import ExperienceModal from "@/components/ExperienceModal"
 import ProjectModal from "@/components/ProjectModal"
 
@@ -69,7 +69,7 @@ export default function Home() {
               <FontAwesomeIcon className="ml-1 group-hover:translate-x-2 transition-all duration-300" icon={faArrowRight} />
             </NextLink>
           </div>
-          
+
         </section>
 
         {/* Experience */}
@@ -113,6 +113,74 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Academic Programs */}
+        <section className="pb-16 pt-10">
+          <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
+            <h2 className="font-semibold text-base text-white/90">Academic Programs</h2>
+          </div>
+
+          <div className="group">
+            <div className="grid grid-cols-2 gap-4">
+
+              <div className="cursor-default flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+                <div className="p-3">
+                  <div className="flex items-center space-x-2 justify-start mb-2">
+                    <div className="text-white/70 items-center text-4xl">
+                      <FontAwesomeIcon icon={faGoogle} />
+                    </div>
+                    <span className="font-bold">Google Tech Exchange</span>
+                  </div>
+                  <div className="flex flex-col space-y-2">
+                    <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-sm text-white/80">Spending a semester with Google, taking courses such as Applied Data Structures and Software Development Studio. Additionally, I am being mentored by a Google software engineer, providing insights into the tech industry and enhancing my skills.</span>
+                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://buildyourfuture.withgoogle.com/programs/tech-exchange">
+                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cursor-default flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+                <div className="p-3">
+                  <div className="flex items-center space-x-2 justify-start mb-2">
+                    <div className="text-white/70 items-center text-4xl">
+                      <FontAwesomeIcon icon={faApple} />
+                    </div>
+                    <span className="font-bold">Apple Pathways Alliance</span>
+                  </div>
+                  <div className="flex flex-col space-y-2">
+                    <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-sm text-white/80">A year long program with Apple, where I am actively being micro-mentored by Apple employees, attending internal workshops to improve technical and professional skills, and have access to an internal resource database to further develop my skills.</span>
+                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://www.apple.com/racial-equity-justice-initiative/pdf/2023-Impact-Overview.pdf">
+                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="cursor-default col-span-2 flex gap-4 group-hover:opacity-30 group-hover:hover:opacity-100 bg-slate-800 hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-300">
+                <div className="p-3">
+                  <div className="flex items-center space-x-2 justify-start mb-2">
+                    <div className="text-white/70 items-center text-4xl">
+                      <FontAwesomeIcon icon={faGraduationCap} />
+                    </div>
+                    <span className="font-bold">FLIT-Gap Scholarship</span>
+                  </div>
+                  <div className="flex flex-col space-y-2">
+                    <span className="text-xs font-bold">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-sm text-white/80">
+                    Selected as one of 50 scholars in the prestigious S-STEM Flit-GAP project across FIU, UCF, and USF, I gained specialized training in computing disciplines like Computer Science and Cybersecurity. The program provided me with scholarships, mentorship, and unique opportunities in research, internships, and entrepreneurship, enhancing my professional and academic skills.</span>
+                    <a className="text-white/70 text-sm hover:text-teal-300 transition-all duration-300 group/link" target="_blank" href="https://flit-gap.org/">
+                      Visit Program Website <FontAwesomeIcon className="group-hover/link:translate-x-2 transition-transform duration-300" icon={faArrowRight} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* Contact */}
         <div className="flex justify-center">
           <section id="contact" className={`grid grid-cols-2 text-white/90 text-sm group/contact transition-all ${isBouncing ? "animate-shine" : ""}`}>
@@ -138,15 +206,15 @@ export default function Home() {
         {/* Footer */}
         <section className="py-8 flex items-center text-center justify-center">
           <p className="text-white/50 text-xs">Coded in
-            <a className="text-white/80" href="https://code.visualstudio.com/"> Visual Studio Code </a>
+            <a className="text-white/80 hover:text-teal-300 transition-all duration-300" href="https://code.visualstudio.com/"> Visual Studio Code </a>
             by Anthony Ham. Built with
-            <a className="text-white/80" href="https://nextjs.org/"> Next.JS </a>
+            <a className="text-white/80 hover:text-teal-300 transition-all duration-300" href="https://nextjs.org/"> Next.JS </a>
             and
-            <a className="text-white/80" href="https://tailwindcss.com/"> Tailwind CSS</a>
+            <a className="text-white/80 hover:text-teal-300 transition-all duration-300" href="https://tailwindcss.com/"> Tailwind CSS</a>
             , deployed with
-            <a className="text-white/80" href="https://vercel.com/"> Vercel </a>
+            <a className="text-white/80 hover:text-teal-300 transition-all duration-300" href="https://vercel.com/"> Vercel </a>
             . All text is set in the
-            <a className="text-white/80" href="https://typetype.org/fonts/tt-hoves/"> TT Hoves Pro </a>
+            <a className="text-white/80 hover:text-teal-300 transition-all duration-300" href="https://typetype.org/fonts/tt-hoves/"> TT Hoves Pro </a>
             typeface.</p>
         </section>
       </main>

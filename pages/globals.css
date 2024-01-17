@@ -43,6 +43,6 @@ body {
 
 .spotlight {
   background-image: radial-gradient(600px at var(--x, 500px) var(--y, 100px),
-      rgba(29, 79, 216, 0.071),
+      rgba(29, 79, 216, 0.15),
       transparent 80%)
 }
