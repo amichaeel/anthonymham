@@ -4,6 +4,7 @@ import PostCard from "@/components/PostCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NextLink from "next/link";
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { RingLoader } from 'react-spinners';
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
@@ -50,7 +51,12 @@ export default function Posts() {
                 </div>
               ))
             ) : (
-              <p>No posts available.</p>
+              <div className="flex flex-col mt-12 items-center justify-center min-w-screen min-h-fit opacity-50">
+                <RingLoader
+                  color="white"
+                  loading={true}
+                />
+              </div>
             )}
           </div>
         </section>
