@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import NextLink from 'next/link'
 import { Link as RSLink, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAddressCard, faAppleAlt, faArrowDown, faArrowRight, faDotCircle, faEnvelope, faGraduationCap, faMessage } from "@fortawesome/free-solid-svg-icons"
+import { faAddressCard, faAppleAlt, faArrowDown, faArrowRight, faBook, faDotCircle, faEnvelope, faGraduationCap, faHandPaper, faMessage, faNewspaper, faPen, faPencil, faPencilAlt, faPencilRuler, faPencilSquare, faRss } from "@fortawesome/free-solid-svg-icons"
 import { faApple, faGithub, faGoogle, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import ExperienceModal from "@/components/ExperienceModal"
 import ProjectModal from "@/components/ProjectModal"
@@ -18,51 +18,49 @@ export default function Home() {
 
   return (
     <main className="max-w-3xl mx-auto">
-      {/* <header className="flex justify-between pt-16 pb-16 px-4">
-        <h1 className="text-base font-semibold text-white">ah</h1>
-        <nav className="flex gap-4 text-white">
-          <RSLink
-            to="contact"
-            smooth={true}
-            className="cursor-pointer"
-            onClick={handleBounce}
-          >Let&apos;s talk! <FontAwesomeIcon icon={faMessage} /></RSLink>
-        </nav>
-      </header> */}
-
       <main className="px-4">
         <section className="pb-16 md:pt-16 pt-10 ">
           <div className="font-semibold mb-4 text-white">
-            <div className="flex flex-row justify-between items-center">
-              <span className="text-4xl font-semibold text-slate-200">
-                Anthony Ham
-              </span>
-              <div className="md:text-[20px] md:hover:text-teal-300 transition-all duration-200 text-3xl">
-                <RSLink
-                  to="contact"
-                  smooth={true}
-                  className="cursor-pointer text-white/70"
-                  onClick={handleBounce}
-                ><FontAwesomeIcon icon={faAddressCard} /> <FontAwesomeIcon icon={faArrowDown} className="text-xs animate-bounce" /></RSLink>
+            <div className="flex justify-between">
+              <div className="w-fit">
+                <span className="text-4xl font-semibold text-slate-200">
+                  Anthony Ham
+                </span>
+                <div className="text-2xl font-normal text-slate-200">
+                  <Typewriter
+                    options={{
+                      strings: ['Software Engineer', "Code Wizard", "Bug Hunter", "Script Sorcerer", "Algorithm Alchemist", "Data Wrangler", "Bit Jockey"],
+                      autoStart: true,
+                      loop: true,
+                      delay: 50,
+                      pauseFor: 10000
+                    }}
+                  />
+                </div>
               </div>
+              <div className="flex md:items-start items-end md:flex-row flex-col md:space-y-0 md:space-x-5 space-y-4">
+                <div className="md:text-[20px] md:hover:text-teal-300 transition-all duration-200 text-3xl">
+                  <RSLink
+                    to="contact"
+                    smooth={true}
+                    className="cursor-pointer space-x-2 text-slate-200 md:hover:text-teal-300 transition-all duration-200"
+                    onClick={handleBounce}
+                  ><FontAwesomeIcon icon={faArrowDown} className="text-xs animate-bounce" /><FontAwesomeIcon icon={faAddressCard} /></RSLink>
+                </div>
+                <div className="text-3xl md:text-[22px]">
+                  <NextLink href="/posts" >
+                    <FontAwesomeIcon className="text-slate-200" icon={faPen} />
+                  </NextLink>
+                </div>
+              </div>
+
             </div>
-            <span className="text-2xl font-normal text-slate-200">
-              <Typewriter
-                options={{
-                  strings: ['Software Engineer', "Code Wizard", "Bug Hunter", "Script Sorcerer", "Algorithm Alchemist", "Data Wrangler", "Bit Jockey"],
-                  autoStart: true,
-                  loop: true,
-                  delay: 50,
-                  pauseFor: 10000
-                }}
-              />
-            </span>
           </div>
           <p className="text-slate-400 text-lg">I&apos;m Anthony, a current student at Florida International University (FIU) studying computer science. Currently, I work on the team at FIU&apos;s Applied Research Center as a software developer, primarily focusing on customer-facing solutions. </p>
         </section>
 
         {/* Projects */}
-        <section className="pb-16 pt-10">
+        <section className="pb-16">
           <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
             <h2 className="font-semibold text-base text-white/90 ">Projects</h2>
           </div>
@@ -72,6 +70,7 @@ export default function Home() {
               imgSource="/orbit-logo.png"
               title="Orbit"
               description="A decentralized social media platform."
+              link="https://orbitchat.vercel.app"
             />
             <ProjectModal
               imgSource="/placeholder-3.png"
