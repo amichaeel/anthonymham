@@ -10,12 +10,10 @@ export default function PostCard({ title, date, description, slug }) {
         <time className="text-slate-200/60 text-sm">{date}</time>
       </div>
       <div>
-        <a href={`posts/${slug}`}>
-          <div className="transition flex flex-row items-center space-x-2">
-            <h2 className="font-semibold text-3xl text-slate-200 group-hover/post:text-teal-300 transition">{title}</h2>
-            <FontAwesomeIcon className="text-slate-200 text-sm group-hover/post:-rotate-45 group-hover/post:text-teal-300 transition" icon={faArrowRight} />
-          </div>
-        </a>
+        <div className="transition flex flex-row items-center space-x-2">
+          <h2 className="font-semibold text-3xl text-slate-200 group-hover/post:text-teal-300 transition">{title}</h2>
+          <FontAwesomeIcon className="text-slate-200 text-sm group-hover/post:-rotate-45 group-hover/post:text-teal-300 transition" icon={faArrowRight} />
+        </div>
         <p className="text-slate-200 font-thin">{description}</p>
       </div>
     </div>
