@@ -1,4 +1,5 @@
 Year,Project,Made at,Built with,Link
+2023,FIU Class Scraper,,"Python,Selenium",github.com/amichaeel/fiu-class-scraper
 2023,Orbit,,"Next.js,React,Socket.io",orbitchat.vercel.app,
 2023,Promptora,,"Next.js,React,Google Auth,MongoDB",github.com/amichaeel/promptora,
 2023,Journey,Shellhacks 2023,"React,MongoDB,Express,Node.js",github.com/amichaeel/journey,
