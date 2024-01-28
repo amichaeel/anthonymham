@@ -74,8 +74,9 @@ export default function Home() {
             />
             <ProjectModal
               imgSource="/placeholder-3.png"
-              title="Promptora"
-              description="A place to share and discover AI prompts."
+              title="FIU Rooms"
+              description="A place for students to find open classrooms at FIU."
+              link="https://fiu-rooms.vercel.app"
             />
             <ProjectModal
               imgSource="/placeholder-2.png"
