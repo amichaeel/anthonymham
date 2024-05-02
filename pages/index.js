@@ -100,15 +100,22 @@ export default function Home() {
             <h2 className="font-semibold text-base text-white/90">Experience</h2>
           </div>
           <div className="space-y-4 group">
-
+            <ExperienceModal
+              location="State Farm"
+              position="Software Engineer Intern"
+              description="Centralized Modeling Platform (CMP) Engineering Team"
+              timeWorked="2024 -- present"
+              technologies={["AWS", "Python", "Terraform", "SageMaker", "Canvas", "Scalr", "Forecast", "React"]}
+            />
+            {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
               location="FIU: Applied Research Center"
               position="Software Developer Intern"
-              description="Focusing on customer-facing solutions"
-              timeWorked="2023 -- present"
-              technologies={["C#", ".NET", "React", "Next.JS", "HTML", "CSS"]}
+              description="Built web applications used in production by the DOT&E, inlcuding an application responsible for hosting their AI/ML services playground."
+              timeWorked="2023 -- 2024"
+              technologies={["C#", ".NET", "Blazor", "React", "Next.JS", "HTML", "CSS"]}
             />
-            <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div>
+            {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
               location="MDC: School of Science"
               position="Undergraduate Research Assistant - Physics"
@@ -116,7 +123,7 @@ export default function Home() {
               timeWorked="2023 -- 2023"
               technologies={["Python", "Matlab", "Pyplot"]}
             />
-            <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div>
+            {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
               location="MDC: School of Engineering and Technology"
               position="Computer Science Tutor"
@@ -124,7 +131,7 @@ export default function Home() {
               timeWorked="2022 -- 2023"
               technologies={["Python", "Java", "C", "C++"]}
             />
-            <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div>
+            {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
           </div>
 
           <div className="flex justify-start mt-6">
@@ -153,7 +160,7 @@ export default function Home() {
                     <span className="font-normal">Google Tech Exchange</span>
                   </div>
                   <div className="flex flex-col space-y-2">
-                    <span className="text-xs font-normal">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-xs font-normal">Status: Completed</span>
                     <span className="text-sm font-light text-white/80">Spending a semester with Google, taking courses such as Applied Data Structures and Software Development Studio. Additionally, I am being mentored by a Google software engineer, providing insights into the tech industry and enhancing my skills.</span>
                     <a className="text-white/70 font-thin text-sm lg:hover:text-teal-300 transition-all w-fit duration-200 group/link" target="_blank" href="https://buildyourfuture.withgoogle.com/programs/tech-exchange">
                       Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:-rotate-45 transition-transform duration-200" icon={faArrowRight} />

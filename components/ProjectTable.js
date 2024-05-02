@@ -12,7 +12,7 @@ export default function ProjectTable() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/api/getprojects'); // Update this with your actual endpoint
+        const response = await fetch('/api/getprojects');
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);
         }
@@ -44,7 +44,6 @@ export default function ProjectTable() {
             </tr>
           </thead>
           <tbody>
-            {console.log(projects)}
             {projects.map((project, index) => (
               <tr key={index} className="border-b border-slate-300/10 last:border-none transition-all duration-300 rounded hover:bg-slate-500/10">
                 <td className="py-4 pr-4 font-light align-top text-sm text-slate-400">
@@ -52,7 +51,11 @@ export default function ProjectTable() {
                 </td>
                 <td className="py-4 pr-4 align-top leading-snug text-slate-200 font-normal">
                   <div className="sm:inline md:hidden">
-                    <a href={`https://${project.Link}`}>{project.Project} <FontAwesomeIcon className="text-xs ml-2" icon={faArrowRight} /></a>
+                    {project.Link ? (
+                      <a href={`https://${project.Link}`}>{project.Project} <FontAwesomeIcon className="text-xs ml-2" icon={faArrowRight} /></a>
+                    ) : (
+                      <span>{project.Project}</span>
+                    )}
                   </div>
                   <div className="md:inline hidden">
                     {project.Project}
@@ -73,13 +76,15 @@ export default function ProjectTable() {
                   </ul>
                 </td>
                 <td className="py-4 align-top hidden md:table-cell">
-                  <a target="_blank" href={`https://${project.Link}`} className="inline-flex items-baseline font-medium leading-tight text-sm text-slate-400 hover:text-teal-300 focus-visible:text-teal-300">
-                    <span>
-                      <span className="inline-block font-normal cursor-pointer transition-all duration-300 group">
-                        {project.Link} <FontAwesomeIcon className="hidden md:inline ml-1 text-xs group-hover:-rotate-45 transition-transform duration-200" icon={faArrowRight} />
+                  {project.Link && (
+                    <a target="_blank" href={`https://${project.Link}`} className="inline-flex items-baseline font-medium leading-tight text-sm text-slate-400 hover:text-teal-300 focus-visible:text-teal-300">
+                      <span>
+                        <span className="inline-block font-normal cursor-pointer transition-all duration-300 group">
+                          {project.Link} <FontAwesomeIcon className="hidden md:inline ml-1 text-xs group-hover:-rotate-45 transition-transform duration-200" icon={faArrowRight} />
+                        </span>
                       </span>
-                    </span>
-                  </a>
+                    </a>
+                  )}
                 </td>
               </tr>
             ))}
