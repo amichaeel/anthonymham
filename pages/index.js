@@ -17,7 +17,7 @@ export default function Home() {
   }
 
   return (
-    <main className="max-w-3xl mx-auto">
+    <main className="max-w-6xl mx-auto">
       <main className="px-4">
         <section className="pb-16 md:pt-16 pt-10 ">
           <div className="font-semibold mb-4 text-white">
@@ -56,7 +56,7 @@ export default function Home() {
 
             </div>
           </div>
-          <p className="text-slate-400 text-lg">I&apos;m Anthony, a current student at Florida International University (FIU) studying computer science. Currently, I work on the team at FIU&apos;s Applied Research Center as a software developer, primarily focusing on customer-facing solutions. </p>
+          <p className="text-slate-400 text-lg">I&apos;m Anthony, a current student at Florida International University (FIU) studying computer science. Currently, I work at State Farm as a Software Engineer Intern, focusing on AI/MLS AWS Enablement. </p>
         </section>
 
         {/* Projects */}
@@ -160,7 +160,7 @@ export default function Home() {
                     <span className="font-normal">Google Tech Exchange</span>
                   </div>
                   <div className="flex flex-col space-y-2">
-                    <span className="text-xs font-normal">Status: Completed</span>
+                    <span className="text-xs font-normal">Status: Complete</span>
                     <span className="text-sm font-light text-white/80">Spending a semester with Google, taking courses such as Applied Data Structures and Software Development Studio. Additionally, I am being mentored by a Google software engineer, providing insights into the tech industry and enhancing my skills.</span>
                     <a className="text-white/70 font-thin text-sm lg:hover:text-teal-300 transition-all w-fit duration-200 group/link" target="_blank" href="https://buildyourfuture.withgoogle.com/programs/tech-exchange">
                       Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:-rotate-45 transition-transform duration-200" icon={faArrowRight} />
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="cursor-default md:col-span-2 flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -205,6 +205,44 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
+                <div className="flex flex-col justify-between p-3">
+                  <div className="flex items-center space-x-2 py-2 justify-start">
+                    <div className="text-white/70 items-center text-4xl">
+                      <svg
+                        fill="#000"
+                        height="36px"
+                        width="36px"
+                        version="1.1"
+                        id="Icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        enableBackground="new 0 0 24 24"
+                        xmlSpace="preserve"
+                        className="invert opacity-70"
+                      >
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M18.18,10.89C19,10.42,21,9.88,21,5.94C21,0.28,14.45,0,14.45,0H2v24c0,0,8.28,0,13.03,0c4.41,0,6.99-2.93,6.99-7.2 C22.02,12.73,19.1,11.47,18.18,10.89z M8,5h4.56c0,0,1.75,0.13,1.75,1.98c0,1.85-1.23,2.02-1.75,2.02S8,9,8,9V5z M13.17,19 C12.57,19,8,19,8,19v-5h5.17c0,0,2.06,0.1,2.06,2.48C15.23,18.51,13.76,19,13.17,19z"></path>
+                        </g>
+                      </svg>
+                    </div>
+                    <span className="font-normal">Bloomberg Engineering Accelerator</span>
+                  </div>
+                  <div className="flex flex-col space-y-2 justify-between">
+                    <span className="text-xs font-normal">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-sm font-light text-white/80">
+                      This program, led by Bloomberg Engineering, will provide me with valuable insights into the technical interview process and the Bloomberg Engineering Culture. BASS will cover a range of topics including data structures and algorithms, problem-solving and patterns, and the opportunity to attend office hours with Bloomberg engineers.</span>
+                    <a className="text-white/70 font-thin text-sm lg:hover:text-teal-300 transition-all w-fit duration-200 group/link" target="_blank" href="https://www.bloomberg.com/company/career/bloomberg-engineering-accelerator/">
+                      Visit Program Website <FontAwesomeIcon className="lg:group-hover/link:-rotate-45 transition-transform duration-200" icon={faArrowRight} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
 
             </div>
           </div>
