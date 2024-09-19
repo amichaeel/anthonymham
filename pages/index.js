@@ -117,7 +117,7 @@ export default function Home() {
             />
             {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
-              location="MDC: School of Science"
+              location="National Science Foundation and MDC School of Science"
               position="Undergraduate Research Assistant - Physics"
               description="Worked alongside Dr. Soumia Souchak on the interaction between radio frequencies and photonic band gap materials. Created data visualizations of our findings."
               timeWorked="2023 -- 2023"
