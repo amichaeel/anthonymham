@@ -56,7 +56,7 @@ export default function Home() {
 
             </div>
           </div>
-          <p className="text-slate-400 text-lg">I&apos;m Anthony, a current student at Florida International University (FIU) studying computer science. Currently, I work at State Farm as a Software Engineer Intern, focusing on AI/MLS AWS Enablement. </p>
+          {/* <p className="text-slate-400 text-lg">I&apos;m Anthony, a current student at Florida International University (FIU) studying computer science.</p> */}
         </section>
 
         {/* Projects */}
@@ -103,7 +103,7 @@ export default function Home() {
             <ExperienceModal
               location="State Farm"
               position="Software Engineer Intern"
-              description="Centralized Modeling Platform (CMP) Engineering Team"
+              description="Worked alongside State Farm's AI/ML Engineering team, building a comprehensive GPU monitoring system and a Bedrock invocation system."
               timeWorked="2024 -- present"
               technologies={["AWS", "Python", "Terraform", "SageMaker", "Canvas", "Scalr", "Forecast", "React"]}
             />
@@ -232,7 +232,7 @@ export default function Home() {
                     <span className="font-normal">Bloomberg Engineering Accelerator</span>
                   </div>
                   <div className="flex flex-col space-y-2 justify-between">
-                    <span className="text-xs font-normal">Status: Active <FontAwesomeIcon icon={faDotCircle} className="animate-pulse text-green-300" /></span>
+                    <span className="text-xs font-normal">Status: Complete</span>
                     <span className="text-sm font-light text-white/80">
                       This program, led by Bloomberg Engineering, will provide me with valuable insights into the technical interview process and the Bloomberg Engineering Culture. BASS will cover a range of topics including data structures and algorithms, problem-solving and patterns, and the opportunity to attend office hours with Bloomberg engineers.</span>
                     <a className="text-white/70 font-thin text-sm lg:hover:text-teal-300 transition-all w-fit duration-200 group/link" target="_blank" href="https://www.bloomberg.com/company/career/bloomberg-engineering-accelerator/">
