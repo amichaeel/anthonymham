@@ -1,7 +1,12 @@
+"use client";
+
 import React, { useState } from "react"
 import NextLink from 'next/link'
 import { Link as RSLink, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 import { faAddressCard, faAppleAlt, faArrowDown, faArrowRight, faBook, faDotCircle, faEnvelope, faGraduationCap, faHandPaper, faMessage, faNewspaper, faPen, faPencil, faPencilAlt, faPencilRuler, faPencilSquare, faRss } from "@fortawesome/free-solid-svg-icons"
 import { faApple, faGithub, faGoogle, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import ExperienceModal from "@/components/ExperienceModal"
@@ -53,6 +58,7 @@ export default function Home() {
                   </NextLink>
                 </div>
               </div>
+
 
             </div>
           </div>
