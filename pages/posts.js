@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NextLink from "next/link";
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { RingLoader } from 'react-spinners';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
