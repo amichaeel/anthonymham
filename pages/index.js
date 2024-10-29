@@ -70,7 +70,7 @@ export default function Home() {
           <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
             <h2 className="font-semibold text-base text-white/90 ">Projects</h2>
           </div>
-          <div className="space-y-4 group/projects">
+          <div className="flex gap-4 justify-between items-center group/projects">
 
             <ProjectModal
               imgSource="/orbit-logo.png"
@@ -79,15 +79,10 @@ export default function Home() {
               link="https://orbitchat.vercel.app"
             />
             <ProjectModal
-              imgSource="/placeholder-3.png"
+              imgSource="/fiu-rooms-icon.png"
               title="FIU Rooms"
               description="A place for students to find open classrooms at FIU."
               link="https://fiu-rooms.vercel.app"
-            />
-            <ProjectModal
-              imgSource="/placeholder-2.png"
-              title="Journey"
-              description="A web app making it easy to create itineraries when you&apos;re on vacation."
             />
           </div>
 
@@ -111,15 +106,15 @@ export default function Home() {
               position="Software Engineer Intern"
               description="Worked alongside State Farm's AI/ML Engineering team, building a comprehensive GPU monitoring system and a Bedrock invocation system."
               timeWorked="2024 -- present"
-              technologies={["AWS", "Python", "Terraform", "SageMaker", "Canvas", "Scalr", "Forecast", "React"]}
+              technologies={["AWS", "Python", "Terraform", "SageMaker", "Canvas", "Scalr", "Forecast", "React", "Java"]}
             />
             {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
               location="FIU: Applied Research Center"
-              position="Software Developer Intern"
+              position="Software Engineer Intern"
               description="Built web applications used in production by the DOT&E, inlcuding an application responsible for hosting their AI/ML services playground."
               timeWorked="2023 -- 2024"
-              technologies={["C#", ".NET", "Blazor", "React", "Next.JS", "HTML", "CSS"]}
+              technologies={["C#", ".NET", "Blazor", "React", "Next.JS", "HTML", "CSS", "C++"]}
             />
             {/* <div className="w-full bg-slate-400/10 rounded-3xl h-1 z-23"></div> */}
             <ExperienceModal
@@ -157,7 +152,7 @@ export default function Home() {
           <div className="group">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
 
-              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 lg:w-full rounded-xl text-white transition-all duration-200">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-900 lg:hover:bg-slate-800 lg:w-full rounded-xl text-white transition-all duration-200">
                 <div className="p-3 group/title">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-slate-200 items-center text-4xl">
@@ -175,7 +170,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-900 lg:hover:bg-slate-800 w-full rounded-xl text-white transition-all duration-200">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -193,7 +188,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-900 lg:hover:bg-slate-800 w-full rounded-xl text-white transition-all duration-200">
                 <div className="p-3">
                   <div className="flex items-center space-x-2 justify-start mb-2">
                     <div className="text-white/70 items-center text-4xl">
@@ -212,7 +207,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-800 lg:hover:bg-slate-700 w-full rounded-xl text-white transition-all duration-200">
+              <div className="cursor-default flex gap-4 lg:group-hover:opacity-30 lg:group-hover:hover:opacity-100 bg-slate-900 lg:hover:bg-slate-800 w-full rounded-xl text-white transition-all duration-200">
                 <div className="flex flex-col justify-between p-3">
                   <div className="flex items-center space-x-2 py-2 justify-start">
                     <div className="text-white/70 items-center text-4xl">

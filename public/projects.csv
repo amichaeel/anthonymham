@@ -1,6 +1,10 @@
 Year,Project,Made at,Built with,Link
+2024,Cloak,Shellhacks 2024,"TypeScript, Vercel, Next.js, React, Drizzle, tRPC, NextAuth",cloak.tools
+2024,TeclaType,,"Go",github.com/ge-garcia/teclatype
 2024,ClassCorder,Google Tech Exchange,"Python,Streamlit,Google Cloud Run,Docker,BigQuery"
-2023,FIU Rooms,,"React,Next.js,MongoDB,Python,Selenium",github.com/amichaeel/fiu-rooms
+2024,PokéBase,,"TypeScript, PokéAPI, GraphQL, React",pokebase.org
+2023,FIU Rooms,,"React,Next.js,MongoDB,Python,Selenium",fiu-rooms.vercel.app
+2023,FIU CLass Scraper,,"Python, Selenium, BSoup",github.com/amichaeel/fiu-class-scraper
 2023,Orbit,,"Next.js,React,Socket.io",orbitchat.vercel.app,
 2023,Promptora,,"Next.js,React,Google Auth,MongoDB",github.com/amichaeel/promptora,
 2023,Journey,Shellhacks 2023,"React,MongoDB,Express,Node.js",github.com/amichaeel/journey,
