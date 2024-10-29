@@ -70,7 +70,7 @@ export default function Home() {
           <div className="sticky top-0 z-20 py-5 backdrop-blur lg:relative lg:top-auto lg:w-full">
             <h2 className="font-semibold text-base text-white/90 ">Projects</h2>
           </div>
-          <div className="flex gap-4 justify-between items-center group/projects">
+          <div className="flex md:flex-row flex-col gap-4 justify-between items-center group/projects">
 
             <ProjectModal
               imgSource="/orbit-logo.png"
