@@ -73,10 +73,16 @@ export default function Home() {
           <div className="flex md:flex-row flex-col gap-4 justify-between items-center group/projects">
 
             <ProjectModal
-              imgSource="/orbit-logo.png"
-              title="Orbit"
-              description="A decentralized social media platform."
-              link="https://orbitchat.vercel.app"
+              imgSource="/scout-icon.png"
+              title="Scout"
+              description="A centralized platform to find tech internships."
+              link="https://scout-silk.vercel.app"
+            />
+            <ProjectModal
+              imgSource="/greenline-icon.png"
+              title="Greenline"
+              description="Combining stocks and machine learning for insights and forecasts."
+              link="https://greenline-ruddy.vercel.app"
             />
             <ProjectModal
               imgSource="/fiu-rooms-icon.png"

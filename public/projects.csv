@@ -1,4 +1,6 @@
 Year,Project,Made at,Built with,Link
+2024,Scout,,"TypeScript, Vercel, Next.js, React, Supabase, Resend",scout-silk.vercel.app
+2024,Greenline,Florida International University,"TypeScript, Vercel, Next.js, React, Polygon.io, Python, Tensorflow",greenline-ruddy.vercel.app
 2024,Cloak,Shellhacks 2024,"TypeScript, Vercel, Next.js, React, Drizzle, tRPC, NextAuth",cloak.tools
 2024,TeclaType,,"Go",github.com/ge-garcia/teclatype
 2024,ClassCorder,Google Tech Exchange,"Python,Streamlit,Google Cloud Run,Docker,BigQuery"
