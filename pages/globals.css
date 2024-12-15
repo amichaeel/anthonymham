@@ -2,69 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial DemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hoves';
-  src: url('/tt_hoves_pro/TT Hoves Pro Trial Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   background: rgb(8, 10, 16);
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(6, 2, 23);
+  background: rgb(2, 22, 44);
   font-family: 'Hoves', sans-serif;
 }
 
 .spotlight {
   background-image: radial-gradient(600px at var(--x, 500px) var(--y, 100px),
-      rgba(29, 79, 216, 0.15),
+      rgba(29, 110, 216, 0.15),
       transparent 80%)
 }

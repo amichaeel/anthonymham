@@ -1,5 +1,9 @@
 import "./globals.css"
 import React, { useRef, useEffect } from 'react'
+import { Inter } from 'next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'] })
 
 export default function MyApp({ Component, pageProps }) {
   const spotlightRef = useRef(null);
@@ -18,7 +22,7 @@ export default function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <div className="group/spotlight relative">
+    <div className={`group/spotlight relative ${inter.className}`}>
       <div ref={spotlightRef} className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute spotlight"></div>
       <Component {...pageProps} />
     </div>
