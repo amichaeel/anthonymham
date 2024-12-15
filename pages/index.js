@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Link from "next/link";
-import { FaApple, FaEnvelope, FaEye, FaGithub, FaGoogle, FaGraduationCap, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaApple, FaClock, FaEnvelope, FaEye, FaGithub, FaGoogle, FaGraduationCap, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import JobExperienceCard from "@/components/JobExperienceCard";
 import Navigation from "@/components/Navigation";
@@ -50,6 +50,9 @@ export default function Home() {
 
         <main className="pt-24 lg:w-[52%] lg:py-24">
           <section id='about' aria-label="About me" className="mb-16 text-slate-500 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+            </div>
             <div>
               <p className="mb-4">I&apos;m a software engineer passionate about designing and building robust and accessible full-stack software products. I find myself always striving to learn new things and apply it to the work that I do. Ultimately, my joy lies in creating expereinces that not only look great but are meticulously built for performance and usability.</p>
               <p className="mb-4">Currently, I am a senior at
@@ -64,7 +67,7 @@ export default function Home() {
 
           <section id='experience' aria-label="About me" className="mb-16 text-slate-500 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-              <h2 className="text-slate-300">Experience</h2>
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
             </div>
             <div>
               <ol className="group/list">
@@ -118,7 +121,7 @@ export default function Home() {
 
           <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-              <h2 className="text-slate-300">Projects</h2>
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
             </div>
             <div>
               <ul className="group/list">
@@ -252,9 +255,9 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="academic-programs" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          <section id="academics" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-              <h2 className="text-slate-300">Academic Programs</h2>
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Academic Programs</h2>
             </div>
             <div>
 
@@ -265,13 +268,28 @@ export default function Home() {
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                     </div>
                     <div className="z-10 sm:col-span-8 text-slate-300">
-                      <div className="flex items-center justify-between space-x-4" >
+                      <div className="flex items-center space-x-4" >
+                        <div className="flex items-center space-x-4">
+                          <span className="text-xl">Florida International University</span>
+                        </div>
+                      </div>
+                      <span className="text-sm text-slate-400">Bachelor of Science, Computer Science</span>
+                      <p className="mt-2 text-sm leading-normal text-slate-500">
+                        Associated with: Tau Beta Pi Engineering Society, INIT, Honor&apos;s College, HSF Scholar, SHPE, Arthrex Scholar
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="mb-12">
+                  <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                    <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                    </div>
+                    <div className="z-10 sm:col-span-8 text-slate-300">
+                      <div className="flex items-center space-x-4" >
                         <div className="flex items-center space-x-4">
                           <FaGoogle size={32} />
                           <span>Google Tech Exchange</span>
-                        </div>
-                        <div>
-                          <span>Complete</span>
                         </div>
                       </div>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -285,13 +303,13 @@ export default function Home() {
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                     </div>
                     <div className="z-10 sm:col-span-8 text-slate-300">
-                      <div className="flex items-center justify-between space-x-4" >
+                      <div className="flex items-center space-x-4" >
                         <div className="flex items-center space-x-4">
                           <FaGraduationCap size={32} />
                           <span>FLIT-Gap Scholarship</span>
                         </div>
                         <div>
-                          <span className="text-sm">Active</span>
+                          <span className="text-sm text-slate-500"><FaClock /></span>
                         </div>
                       </div>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -305,13 +323,13 @@ export default function Home() {
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                     </div>
                     <div className="z-10 sm:col-span-8 text-slate-300">
-                      <div className="flex items-center justify-between space-x-4" >
+                      <div className="flex items-center space-x-4" >
                         <div className="flex items-center space-x-4">
                           <FaApple size={32} />
                           <span>Apple Pathways Alliance</span>
                         </div>
                         <div>
-                          <span>Active</span>
+                          <span className="text-sm text-slate-500"><FaClock /></span>
                         </div>
                       </div>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -325,7 +343,7 @@ export default function Home() {
                     <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
                     </div>
                     <div className="z-10 sm:col-span-8 text-slate-300">
-                      <div className="flex items-center justify-between space-x-4" >
+                      <div className="flex items-center space-x-4" >
                         <div className="flex items-center space-x-4">
                           <div className="text-white/70 items-center text-4xl">
                             <svg
@@ -348,9 +366,6 @@ export default function Home() {
                             </svg>
                           </div>
                           <span>Bloomberg Engineering Accelerator</span>
-                        </div>
-                        <div>
-                          <span>Complete</span>
                         </div>
                       </div>
                       <p className="mt-2 text-sm leading-normal text-slate-500">

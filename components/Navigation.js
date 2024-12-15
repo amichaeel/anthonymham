@@ -8,7 +8,8 @@ const Navigation = () => {
         {[
           { href: "about", label: "About" },
           { href: "experience", label: "Experience" },
-          { href: "projects", label: "Projects" }
+          { href: "projects", label: "Projects" },
+          { href: "academics", label: "Academics" }
         ].map((item) => (
           <li key={item.href}>
             <ScrollLink
