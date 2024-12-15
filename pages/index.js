@@ -17,7 +17,7 @@ export default function Home() {
               <Link href="/">Anthony Ham</Link>
             </h1>
             <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer</h2>
-            <p class="mt-4 max-w-xs leading-normal text-slate-400">I build accessible, pixel-perfect digital experiences for the web.</p>
+            <p class="mt-4 max-w-xs leading-normal text-slate-400">I build intelligent, data-driven solutions that transform how people learn and work.</p>
             <Navigation />
           </div>
           <ul className="ml-1 mt-8 flex items-center text-slate-500">
