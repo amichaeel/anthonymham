@@ -4,6 +4,7 @@ import { FaApple, FaClock, FaEnvelope, FaEye, FaGithub, FaGoogle, FaGraduationCa
 import Image from "next/image";
 import JobExperienceCard from "@/components/JobExperienceCard";
 import Navigation from "@/components/Navigation";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
 
@@ -113,7 +114,7 @@ export default function Home() {
               </ol>
               <div className="mt-12">
                 <Link href="/resume.pdf" className="inline-flex items-baseline font-medium leading-tight hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base">
-                  <span>View Full Resume</span>
+                  <span>View Full Resume <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                 </Link>
               </div>
             </div>
@@ -134,7 +135,7 @@ export default function Home() {
                       <h3>
                         <Link target="_blank" href="https://scout-silk.vercel.app" className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
                           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                          <span>Scout</span>
+                          <span>Scout <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                         </Link>
                       </h3>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -162,7 +163,7 @@ export default function Home() {
                       <h3>
                         <Link target="_blank" href="https://greenline-ruddy.vercel.app/" className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
                           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                          <span>Greenline</span>
+                          <span>Greenline <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                         </Link>
                       </h3>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -191,7 +192,7 @@ export default function Home() {
                       <h3>
                         <Link target="_blank" href="https://fiu-rooms.vercel.app" className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
                           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                          <span>FIU Rooms</span>
+                          <span>FIU Rooms <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                         </Link>
                       </h3>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -225,7 +226,7 @@ export default function Home() {
                       <h3>
                         <Link target="_blank" href="https://orbitchat.vercel.app/" className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
                           <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                          <span>Orbit</span>
+                          <span>Orbit <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                         </Link>
                       </h3>
                       <p className="mt-2 text-sm leading-normal text-slate-500">
@@ -249,7 +250,7 @@ export default function Home() {
               </ul>
               <div className="mt-12">
                 <Link href="/projects" className="inline-flex items-baseline font-medium leading-tight hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base">
-                  <span>View Full Project Archive</span>
+                  <span>View Full Project Archive <ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
                 </Link>
               </div>
             </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
+import { ArrowRight } from 'lucide-react';
 
 const JobExperienceCard = ({
   timeFrame,
@@ -27,10 +29,12 @@ const JobExperienceCard = ({
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                <span>
+                <span className=''>
                   {jobTitle}
                   <span className="px-2">·</span>
-                  <span className="inline-block">{company}</span>
+                  {company.split(" ").length > 1 ? company.split(" ").slice(0, -1).join(" ") + " " : company}
+                  <span className="inline-block">{company.split(" ").length > 1 && company.split(" ").pop()}<ArrowRight className='inline-block h-4 w-4 -rotate-45 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px' /></span>
+
                 </span>
               </Link>
             </div>
