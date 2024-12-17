@@ -18,7 +18,7 @@ export default function Home() {
               <Link href="/">Anthony Ham</Link>
             </h1>
             <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer</h2>
-            <p class="mt-4 max-w-xs leading-normal text-slate-400">I build intelligent, data-driven solutions that transform how people learn and work.</p>
+            <p class="mt-4 max-w-xs leading-normal text-slate-400">I build intuitive, data-driven solutions that transform how people learn and work.</p>
             <Navigation />
           </div>
           <ul className="ml-1 mt-8 flex items-center text-slate-500">
@@ -75,7 +75,7 @@ export default function Home() {
                 <JobExperienceCard
                   timeFrame={"2025"}
                   jobTitle="Front End Engineer Intern"
-                  company={"AWS"}
+                  company={"Amazon"}
                   description={"Starting 2025"}
                   companyLink={"https://aws.amazon.com"}
                 />
@@ -83,15 +83,15 @@ export default function Home() {
                   timeFrame={"2024 — Present"}
                   jobTitle="Software Engineer Intern"
                   company={"State Farm"}
-                  description={"Build and maintain the AWS infrastructure utilized by ML/AI engineers across all of State Farm. Work closely with machine learning and data scientist in an agile environment, improving and reiterating the AWS infrastructure to meet their needs."}
+                  description={"Designed and maintained AWS infrastructure supporting ML/AI engineers across State Farm. Collaborated closely with machine learning engineers and data scientists in an agile environment, continuously improving and iterating the infrastructure to meet evolving requirements."}
                   companyLink={"https://statefarm.com"}
                   technologies={["Terraform", "TypeScript", "Python", "AWS Lambda", "AWS SageMaker", "Bash", "Java"]} />
 
                 <JobExperienceCard
                   timeFrame={"2023 — 2024"}
-                  jobTitle="Software Engineer Intern"
+                  jobTitle="Software Developer"
                   company={"FIU: Applied Research Center"}
-                  description={"Work closely with the DOT&E and DOE, providing full-stack software products to showcase the machine learning and artificial intelligence capabilities our research center is developing."}
+                  description={"Collaborated closely with the DOT&E and DOE, delivering full-stack software solutions to demonstrate the machine learning and artificial intelligence capabilities developed by our research center."}
                   companyLink={"https://arc.fiu.edu"}
                   technologies={["C#", ".NET", "Blazor", "TypeScript", "React", "C++"]} />
 
@@ -99,7 +99,7 @@ export default function Home() {
                   timeFrame={"JAN — APRIL 2023"}
                   jobTitle="Undergraduate Researcher"
                   company={"National Science Foundation"}
-                  description={"Work closely with the DOT&E and DOE, providing full-stack software products to showcase the machine learning and artificial intelligence capabilities our research center is developing."}
+                  description={"Collaborated closely with Dr. Soumia Souchak on physics research, focusing on data visualization and predictive analysis to advance research initiatives."}
                   companyLink={"https://statefarm.com"}
                   technologies={["Python", "Matlab", "Pyplot"]} />
 
