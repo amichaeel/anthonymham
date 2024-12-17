@@ -100,7 +100,7 @@ export default function Home() {
                   jobTitle="Undergraduate Researcher"
                   company={"National Science Foundation"}
                   description={"Collaborated closely with Dr. Soumia Souchak on physics research, focusing on data visualization and predictive analysis to advance research initiatives."}
-                  companyLink={"https://statefarm.com"}
+                  companyLink={"https://www.nsf.gov/"}
                   technologies={["Python", "Matlab", "Pyplot"]} />
 
                 <JobExperienceCard
@@ -108,7 +108,7 @@ export default function Home() {
                   jobTitle="Computer Science Tutor"
                   company={"MDC School of Engineering and Technology"}
                   description={"Worked with over 200 computer science students in teaching and assisting with their coursework and assignments."}
-                  companyLink={"https://statefarm.com"}
+                  companyLink={"https://www.mdc.edu/entec/"}
                   technologies={["Java", "Python", "C", "C++"]} />
 
               </ol>
