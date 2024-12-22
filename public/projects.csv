@@ -7,7 +7,7 @@ Year,Project,Made at,Built with,Link
 2024,PokéBase,,"TypeScript, PokéAPI, GraphQL, React",pokebase.org
 2023,FIU Rooms,,"React,Next.js,MongoDB,Python,Selenium",fiu-rooms.vercel.app
 2023,FIU CLass Scraper,,"Python, Selenium, BSoup",github.com/amichaeel/fiu-class-scraper
-2023,Orbit,,"Next.js,React,Socket.io",orbitchat.vercel.app,
+2023,Orbit,,"Next.js,React,Socket.io",orbit-chat-phi.vercel.app/,
 2023,Promptora,,"Next.js,React,Google Auth,MongoDB",github.com/amichaeel/promptora,
 2023,Journey,Shellhacks 2023,"React,MongoDB,Express,Node.js",github.com/amichaeel/journey,
 2023,Vanilla Chess,,"Javascript,HTML,CSS",amichaeel.github.io/chess/pages,
