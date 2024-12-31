@@ -76,8 +76,15 @@ export default function Home() {
                   timeFrame={"2025"}
                   jobTitle="Front End Engineer Intern"
                   company={"Amazon"}
-                  description={"Starting 2025"}
+                  description={"Starting Fall 2025"}
                   companyLink={"https://aws.amazon.com"}
+                />
+                <JobExperienceCard
+                  timeFrame={"2025"}
+                  jobTitle="Software Engineer Intern"
+                  company={"Google"}
+                  description={"Core Connections Team - Starting Summer 2025"}
+                  companyLink={"https://google.com"}
                 />
                 <JobExperienceCard
                   timeFrame={"2024 — Present"}
