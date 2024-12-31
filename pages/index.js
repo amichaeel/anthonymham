@@ -57,12 +57,14 @@ export default function Home() {
             <div>
               <p className="mb-4">I&apos;m a software engineer passionate about designing and building robust and accessible full-stack software products. I find myself always striving to learn new things and apply it to the work that I do. Ultimately, my joy lies in creating expereinces that not only look great but are meticulously built for performance and usability.</p>
               <p className="mb-4">Currently, I am a senior at
-                <Link target="_blank" href="https://fiu.edu" className=" text-slate-300 text-sm hover:text-teal-300 focus-visible:text-teal-300 mx-2">Florida International University</Link>
+                <Link target="_blank" href="https://fiu.edu" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 mx-2">Florida International University</Link>
                 studying Computer Science. Additionally, I am currently a Software Engineer Intern at
-                <Link target="_blank" href="https://statefarm.com" className=" text-slate-300 text-sm hover:text-teal-300 focus-visible:text-teal-300 ml-2">State Farm</Link>,
-                where I am responsible for scaling and maintaining the AWS infrastructure used by ML/AI engineers. I will also be joining
-                <Link target="_blank" href="https://aws.amazon.com" className=" text-slate-300 text-sm hover:text-teal-300 focus-visible:text-teal-300 mx-2">AWS</Link>
-                as a Front End Engineer Intern in 2025.</p>
+                <Link target="_blank" href="https://statefarm.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 ml-2">State Farm</Link>,
+                where I am responsible for scaling and maintaining the AWS infrastructure used by ML/AI engineers. I will be joining
+                <Link target="_blank" href="https://google.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 mx-2">Google</Link>
+                as a Software Engineer Intern in the summer of 2025, and then
+                <Link target="_blank" href="https://amazon.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 ml-2">Amazon</Link>,
+                as a Front End Engineer Intern in the fall of 2025, and expect to graduate around April of 2026.</p>
             </div>
           </section>
 
