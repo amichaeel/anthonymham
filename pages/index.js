@@ -62,9 +62,7 @@ export default function Home() {
                 <Link target="_blank" href="https://statefarm.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 ml-2">State Farm</Link>,
                 where I am responsible for scaling and maintaining the AWS infrastructure used by ML/AI engineers. I will be joining
                 <Link target="_blank" href="https://google.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 mx-2">Google</Link>
-                as a Software Engineer Intern in the summer of 2025, and then
-                <Link target="_blank" href="https://amazon.com" className=" text-slate-300 text-base hover:text-teal-300 focus-visible:text-teal-300 ml-2">Amazon</Link>,
-                as a Front End Engineer Intern in the fall of 2025, and expect to graduate around April of 2026.</p>
+                as a Software Engineer Intern in the summer of 2025.</p>
             </div>
           </section>
 
@@ -74,13 +72,13 @@ export default function Home() {
             </div>
             <div>
               <ol className="group/list">
-                <JobExperienceCard
+                {/* <JobExperienceCard
                   timeFrame={"2025"}
                   jobTitle="Front End Engineer Intern"
                   company={"Amazon"}
                   description={"Starting Fall 2025"}
                   companyLink={"https://aws.amazon.com"}
-                />
+                /> */}
                 <JobExperienceCard
                   timeFrame={"2025"}
                   jobTitle="Software Engineer Intern"
